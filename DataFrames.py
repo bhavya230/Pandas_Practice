@@ -35,3 +35,7 @@ print(df4[["C1","C2"]])
 # checking datatype -- series vs dataframe 
 print(type(df4[["C1","C2"]]))  # dataframe
 print(type(df4["C1"])) # series
+
+# 2) using loc -- for rows and cols ( cannot be used for cols alone)
+
+print(df4.loc[["R1","R2"],["C1","C2"]])
