@@ -36,6 +36,10 @@ print(df4[["C1","C2"]])
 print(type(df4[["C1","C2"]]))  # dataframe
 print(type(df4["C1"])) # series
 
-# 2) using loc -- for rows and cols ( cannot be used for cols alone)
+# 2) using loc -- for rows and cols labels indexing ( cannot be used for cols alone)
 
 print(df4.loc[["R1","R2"],["C1","C2"]])
+
+# 3) using iloc for index based accesing
+
+print(df4.iloc[:,::2])
