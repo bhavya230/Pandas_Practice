@@ -22,3 +22,7 @@ print(df3)
 # 4 using  ndarrays
 df4=pd.DataFrame(np.arange(20).reshape(5,4),index=["R1","R2","R3","R4","R5"],columns=["C1","C2","C3","C4"])
 print(df4)
+
+print(type(df4))
+print(df4.info())
+print(df4.describe())
