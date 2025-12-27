@@ -19,3 +19,9 @@ print(s4)
 
 # Head function 
 
+print ( s1.head(2))
+print(s2.head(1))
+
+# Tail function 
+print(s3.tail(2))
+print(s4.tail(1))
