@@ -4,12 +4,18 @@ import numpy as np
 
 # Series --- 
 
-print(pd.Series([1,2,3])) # LIST
+s1=pd.Series([1,2,3]) # LIST
+print(s1)
 
-print(pd.Series(10,index=[1,2,3])) # SCALAR VALUE
+s2=pd.Series(10,index=[1,2,3]) # SCALAR VALUE
+print(s2)
 
-print(pd.Series(np.array([4,5,6]), index=["one","two","three"])) #ndarray
+s3=pd.Series(np.array([4,5,6]), index=["one","two","three"]) #ndarray
+print(s3)
 
 dict={"name":"Bhavya","age":20}
-print(pd.Series(dict)) # DICTIONARY
+s4=pd.Series(dict) # DICTIONARY
+print(s4)
+
+# Head function 
 
