@@ -26,3 +26,12 @@ print(df4)
 print(type(df4))
 print(df4.info())
 print(df4.describe())
+
+# INDEXING 
+
+# 1) using col name 
+print(df4[["C1","C2"]])
+
+# checking datatype -- series vs dataframe 
+print(type(df4[["C1","C2"]]))  # dataframe
+print(type(df4["C1"])) # series
