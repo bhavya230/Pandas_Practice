@@ -25,3 +25,13 @@ print(s2.head(1))
 # Tail function 
 print(s3.tail(2))
 print(s4.tail(1))
+
+# Selection 
+# 1-- using loc 
+print(s1.loc[0:2])
+
+# 2 --using iloc
+print(s1.iloc[0:2])
+
+# slicing 
+print(s1[::2])
