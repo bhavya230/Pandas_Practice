@@ -46,3 +46,23 @@ print(df4.iloc[:,::2])
 
 # convert dataframe to array 
 print(df4.values) # coverted to numpy nd arrays
+
+# Basic operations : 
+
+# create a datafrane with some NaN(not a number) values
+df= pd.DataFrame([[1,np.nan,np.nan],[10,20,30]],index=["ROW1","ROW2"],columns=["COL1","COL2","COL3"])
+print(df)
+# checking NA values --- 
+print(df.isna())
+
+# sum where NA value is present colum sum is not 0
+print(df.isna().sum())
+
+# counts no of of time a value occured in the columns
+print(df['COL1'].value_counts())
+
+# returns the series object of uniques values a column have
+print(df['COL1'].unique())
+
+# conditional indexing 
+print(df[df['COL1']>2])
