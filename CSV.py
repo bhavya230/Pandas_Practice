@@ -19,3 +19,8 @@ print(df1)
 
 # when want to explore specific columns only 
 print(pd.read_csv('mercedesbenz.csv',usecols=['X0','X1','X2','X3']))
+
+# converting back to csv
+print(df1.to_csv())
+
+print(df1.to_csv(index=False)) # when dont want indexes to be converted
