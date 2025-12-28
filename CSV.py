@@ -14,4 +14,8 @@ data=('col1,col2,col3\n'
       'a,b,c')
 
 file_formated_data=StringIO(data)
-print(pd.read_csv(file_formated_data))
+df1=pd.read_csv(file_formated_data)
+print(df1)
+
+# when want to explore specific columns only 
+print(pd.read_csv('mercedesbenz.csv',usecols=['X0','X1','X2','X3']))
