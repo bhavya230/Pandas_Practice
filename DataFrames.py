@@ -43,3 +43,6 @@ print(df4.loc[["R1","R2"],["C1","C2"]])
 # 3) using iloc for index based accesing
 
 print(df4.iloc[:,::2])
+
+# convert dataframe to array 
+print(df4.values) # coverted to numpy nd arrays
