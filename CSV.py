@@ -45,3 +45,6 @@ print(df3)
 
 # using usecols and index_cols iksth-- among columns seleceted in usecols index_cols is selected 
 print(pd.read_csv(StringIO(data3),usecols=['a','b','c'] ,index_col='a')) 
+
+# reading a external source file with different separator (tab)
+print(pd.read_csv('https://download.bls.gov/pub/time.series/cu/cu.item',sep='\t'))
