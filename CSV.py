@@ -33,3 +33,15 @@ data2=('a,b,c,d\n'
 
 df2= pd.read_csv(StringIO(data2),dtype={'a':int,'b':float,'c':float})
 print(df2.info())
+
+#index col attribute -- tells which cols should be used as row index instead of default numbers-o,1,2.. 
+data3= ('index,a,b,c\n'
+        '4,apple,bat,5.7\n'
+        '8,orange,cow,10')
+df3=pd.read_csv(StringIO(data3))
+print(df3)
+df3=pd.read_csv(StringIO(data3),index_col='index')
+print(df3)
+
+# using usecols and index_cols iksth-- among columns seleceted in usecols index_cols is selected 
+print(pd.read_csv(StringIO(data3),usecols=['a','b','c'] ,index_col='a')) 
