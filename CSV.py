@@ -57,5 +57,7 @@ print(pd.read_csv(StringIO(data4),index_col=False))
 
 print(pd.read_csv(StringIO(data3),usecols=['a','b','c'] ,index_col='a')) 
 
-# reading a external source file with different separator (tab)
-print(pd.read_csv('https://download.bls.gov/pub/time.series/cu/cu.item',sep='\t'))
+## Quoting and Escape Characters -- useful in nlp 
+data = 'a,b\n"hello, \\"BOB\\", nice to see you",5'
+print(pd.read_csv(StringIO(data),escapechar='\\'))
+
