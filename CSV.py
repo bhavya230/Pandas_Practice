@@ -61,3 +61,6 @@ print(pd.read_csv(StringIO(data3),usecols=['a','b','c'] ,index_col='a'))
 data = 'a,b\n"hello, \\"BOB\\", nice to see you",5'
 print(pd.read_csv(StringIO(data),escapechar='\\'))
 
+## URL TO CSV 
+df= pd.read_csv('https://download.bls.gov/pub/tme.series/cu/cu.item',sep='\t')
+print(df.head())
