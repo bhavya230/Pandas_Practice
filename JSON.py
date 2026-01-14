@@ -11,7 +11,7 @@ print(pd.read_json(StringIO(data),orient='records'))
 #-- index
 print(pd.read_json(StringIO(data),orient='index'))
 #--split
-print(pd.read_json(StringIO(data),orient='split'))
+#print(pd.read_json(StringIO(data),orient='split'))
 
 # DataFrame to JSON OBJECT 
 df=pd.DataFrame([['a','b'],['c','d']],index=['row1','row2'],columns=['col1','col2'])
@@ -51,3 +51,7 @@ data=[
     },
 ]
 print(pd.json_normalize(data))
+
+# maxlevel attribute -- to set depth of reading nested json objects
+print(pd.json_normalize(data,max_level=0))
+print(pd.json_normalize(data,max_level=1))
